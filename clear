@@ -1,0 +1,40 @@
+[1mdiff --git a/TaskManager.cpp b/TaskManager.cpp[m
+[1mindex c58e5af..6de195f 100644[m
+[1m--- a/TaskManager.cpp[m
+[1m+++ b/TaskManager.cpp[m
+[36m@@ -6,4 +6,9 @@[m [musing namespace std;[m
+ void ShowTasks()[m
+ {[m
+     cout << "No tasks available." << endl;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid AddTask()[m
+[32m+[m[32m{[m
+[32m+[m[32m    cout << "Task added successfully." << endl;[m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/TaskManager.h b/TaskManager.h[m
+[1mindex f2974c0..2cfec3b 100644[m
+[1m--- a/TaskManager.h[m
+[1m+++ b/TaskManager.h[m
+[36m@@ -1,3 +1,4 @@[m
+ #pragma once[m
+ [m
+[31m-void ShowTasks();[m
+\ No newline at end of file[m
+[32m+[m[32mvoid ShowTasks();[m
+[32m+[m[32mvoid AddTask();[m
+\ No newline at end of file[m
+[1mdiff --git a/main.cpp b/main.cpp[m
+[1mindex 11d05be..a56b511 100644[m
+[1m--- a/main.cpp[m
+[1m+++ b/main.cpp[m
+[36m@@ -8,6 +8,7 @@[m [mint main()[m
+     cout << "=== Task Manager ===" << endl;[m
+ [m
+     ShowTasks();[m
+[32m+[m[32m    AddTask();[m
+ [m
+     return 0;[m
+ }[m
+\ No newline at end of file[m
